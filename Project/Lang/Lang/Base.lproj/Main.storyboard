@@ -20,22 +20,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-sS-fkZ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="597.33333333333337"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDU-2H-2TT">
-                                                <rect key="frame" x="30" y="40" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rr5-n4-3DR">
-                                                <rect key="frame" x="338" y="40" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="nDU-2H-2TT" firstAttribute="leading" secondItem="yaa-sS-fkZ" secondAttribute="leading" constant="30" id="A8O-UL-CO7"/>
-                                            <constraint firstItem="nDU-2H-2TT" firstAttribute="top" secondItem="yaa-sS-fkZ" secondAttribute="top" constant="40" id="Pu6-Ha-1DY"/>
-                                            <constraint firstAttribute="trailing" secondItem="rr5-n4-3DR" secondAttribute="trailing" constant="30" id="d2k-Ki-nJm"/>
-                                            <constraint firstItem="rr5-n4-3DR" firstAttribute="top" secondItem="yaa-sS-fkZ" secondAttribute="top" constant="40" id="wFp-Wx-bKd"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-y0-avK">
                                         <rect key="frame" x="0.0" y="597.33333333333337" width="414" height="298.66666666666663"/>
@@ -78,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
         </scene>
     </scenes>
 </document>
