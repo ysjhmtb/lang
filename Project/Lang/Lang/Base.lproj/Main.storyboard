@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,7 +43,7 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-eX-1Xa">
                                                 <rect key="frame" x="20" y="209" width="374" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="BP8-JN-zBs"/>
                                                     <constraint firstAttribute="height" constant="60" id="Euc-mr-7xW"/>
@@ -137,6 +137,18 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-xu-RJV">
+                                                <rect key="frame" x="62" y="169" width="41.666666666666657" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNr-8w-tLv">
+                                                <rect key="frame" x="310.33333333333331" y="169" width="41.666666666666686" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="6NR-F4-oGS" firstAttribute="leading" secondItem="je2-4u-8Hj" secondAttribute="leading" id="5nM-si-cjT"/>
@@ -147,8 +159,10 @@
                                             <constraint firstItem="JIj-Za-uGb" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="1.8" id="GHZ-5k-muZ"/>
                                             <constraint firstItem="vcp-fC-tjK" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="0.65" id="GOd-UU-dnQ"/>
                                             <constraint firstItem="6NR-F4-oGS" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.6" id="HG2-zb-OmF"/>
+                                            <constraint firstItem="SiD-xu-RJV" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="0.4" id="KSY-fm-4oA"/>
                                             <constraint firstItem="keg-Sm-ISv" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" id="MCA-E7-Bak"/>
                                             <constraint firstItem="keg-Sm-ISv" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.5" id="Nl6-sq-eZJ"/>
+                                            <constraint firstItem="FNr-8w-tLv" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="1.6" id="Swh-3l-3Rx"/>
                                             <constraint firstItem="je2-4u-8Hj" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="1.4" id="T9i-I0-Bxf"/>
                                             <constraint firstItem="JIj-Za-uGb" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.2" id="Var-FB-YMK"/>
                                             <constraint firstItem="8Tt-kA-bZt" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" id="acV-K0-dOr"/>
@@ -159,8 +173,10 @@
                                             <constraint firstItem="PR3-eX-1Xa" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" id="iDn-0v-WEf"/>
                                             <constraint firstItem="vcp-fC-tjK" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.5" id="kpb-Ty-36D"/>
                                             <constraint firstItem="je2-4u-8Hj" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.36" id="mTX-xD-t4Z"/>
+                                            <constraint firstItem="FNr-8w-tLv" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.6" id="nZr-yS-7WE"/>
                                             <constraint firstItem="37N-GN-HXc" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="0.2" id="oX0-hE-R4Q"/>
                                             <constraint firstItem="amt-er-WFb" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.35" id="soG-d6-dQz"/>
+                                            <constraint firstItem="SiD-xu-RJV" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.6" id="uro-Bw-m8w"/>
                                             <constraint firstAttribute="trailing" secondItem="PR3-eX-1Xa" secondAttribute="trailing" constant="20" id="v4E-eg-NNM"/>
                                             <constraint firstItem="8Tt-kA-bZt" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.1" id="yS0-hO-IGd"/>
                                         </constraints>
@@ -199,9 +215,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="controlConatinerView" destination="PR3-eX-1Xa" id="hoJ-30-Ozh"/>
                         <outlet property="controlPanel" destination="ifW-XI-47N" id="fxQ-J7-cTk"/>
                         <outlet property="controlView" destination="9vT-y0-avK" id="Sai-5c-UTx"/>
                         <outlet property="playerView" destination="yaa-sS-fkZ" id="GAo-I1-Dun"/>
+                        <outlet property="pointerALabel" destination="SiD-xu-RJV" id="eqv-lQ-BEF"/>
+                        <outlet property="pointerBLabel" destination="FNr-8w-tLv" id="vD7-rd-kjs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
