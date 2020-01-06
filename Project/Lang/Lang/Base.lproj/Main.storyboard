@@ -42,11 +42,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-eX-1Xa">
-                                                <rect key="frame" x="20" y="209" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="242.66666666666663" width="374" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="BP8-JN-zBs"/>
-                                                    <constraint firstAttribute="height" constant="60" id="Euc-mr-7xW"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Euc-mr-7xW"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8Tt-kA-bZt">
@@ -169,7 +169,7 @@
                                             <constraint firstItem="uTE-IP-e2P" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.85" id="b0C-2t-PdS"/>
                                             <constraint firstItem="uTE-IP-e2P" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" id="fdI-bX-hsP"/>
                                             <constraint firstItem="XGM-iL-V6E" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" multiplier="0.25" id="gl2-Qx-vPS"/>
-                                            <constraint firstItem="PR3-eX-1Xa" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.8" id="hGY-d0-CmB"/>
+                                            <constraint firstItem="PR3-eX-1Xa" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="0.88" id="hGY-d0-CmB"/>
                                             <constraint firstItem="PR3-eX-1Xa" firstAttribute="centerX" secondItem="yaa-sS-fkZ" secondAttribute="centerX" id="iDn-0v-WEf"/>
                                             <constraint firstItem="vcp-fC-tjK" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.5" id="kpb-Ty-36D"/>
                                             <constraint firstItem="je2-4u-8Hj" firstAttribute="centerY" secondItem="yaa-sS-fkZ" secondAttribute="centerY" multiplier="1.36" id="mTX-xD-t4Z"/>
