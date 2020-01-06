@@ -103,7 +103,7 @@ class RangeSlider: UIControl {
     
     upperThumbImageView.image = thumbImageB
     addSubview(upperThumbImageView)
-   
+       
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -116,13 +116,19 @@ class RangeSlider: UIControl {
         //                   than the source rectangle, with the same center point.
     trackLayer.frame = bounds.insetBy(dx: 0.0, dy: bounds.height / 3)
     trackLayer.setNeedsDisplay()
+//    lowerThumbImageView.frame = CGRect(origin: thumbOriginForValue(lowerValue),
+//                                       size: thumbImageA.size)
+//    upperThumbImageView.frame = CGRect(origin: thumbOriginForValue(upperValue),
+//                                       size: thumbImageB.size)
     lowerThumbImageView.frame = CGRect(origin: thumbOriginForValue(lowerValue),
-                                       size: thumbImageA.size)
+                                       size: CGSize(self.bounds.width * 0.05, self.bounds.width * 0.05 * 1.56))
     upperThumbImageView.frame = CGRect(origin: thumbOriginForValue(upperValue),
-                                       size: thumbImageB.size)
+                                       size: CGSize(self.bounds.width * 0.05, self.bounds.width * 0.05 * 1.56))
     CATransaction.begin()
     CATransaction.setDisableActions(true)
     CATransaction.commit()
+    
+    
 
   }
   // 2
@@ -132,20 +138,24 @@ class RangeSlider: UIControl {
   }
   // 3
   private func thumbOriginForValue(_ value: CGFloat) -> CGPoint {
-    let x = positionForValue(value) - thumbImageA.size.width / 2.0
-    return CGPoint(x: x, y: (bounds.height * 0.001 - thumbImageA.size.height) / 2.0)
+//    let x = positionForValue(value) - thumbImageA.size.width / 2
+    let x = positionForValue(value) - (self.bounds.width * 0.05) / 2
+    return CGPoint(x: x, y: (bounds.height * 0.5 - thumbImageA.size.height) / 2.0)
   }
 }
 
 extension RangeSlider {
   override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    print("beginTracking")
     // 1
     previousLocation = touch.location(in: self)
     
     // 2
     if lowerThumbImageView.frame.contains(previousLocation) {
+      print("beginTracking if lowerThumbImageView")
       lowerThumbImageView.isHighlighted = true
     } else if upperThumbImageView.frame.contains(previousLocation) {
+      print("beginTracking if upperThumbImageView")
       upperThumbImageView.isHighlighted = true
     }
     

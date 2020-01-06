@@ -78,14 +78,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        controlConatinerView.addSubview(rangeSlider)
-        // 드래그 이벤트에 따른 위치 정보 가져오기
-        rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)),
-        for: .valueChanged)
+        
         // 구간 정보 레이블 초기화
         pointerALabel.text = rangeSlider.lowerValue.description
         pointerBLabel.text = rangeSlider.upperValue.description
-                
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -99,38 +95,36 @@ class ViewController: UIViewController {
         createGradientLayer()
         
         let margin: CGFloat = 20
-//        let width = view.bounds.width - 2 * margin
-        let width = controlConatinerView.bounds.width - 2 * margin
-//        let height: CGFloat = 30
-        let height: CGFloat = controlConatinerView.bounds.height * 0.5
         
-        rangeSlider.frame = CGRect(x: 0, y: 0, width: width, height: height)
-//        rangeSlider.center = CGPoint(controlConatinerView.center.x * 0.9, controlConatinerView.center.y * 0.21)
-        rangeSlider.center = CGPoint(view.center.x * 0.9, view.center.y * 0.1)
+        rangeSlider.frame = CGRect(x: 0, y: 0, width: controlConatinerView.bounds.width, height: controlConatinerView.bounds.height)
         
-        
+        controlConatinerView.addSubview(rangeSlider)
+        rangeSlider.bottomAnchor.constraint(equalToSystemSpacingBelow: controlConatinerView.bottomAnchor, multiplier: 1)
+        // 드래그 이벤트에 따른 위치 정보 가져오기
+        rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)),
+        for: .valueChanged)
     }
     
     // 드래그 이벤트에 따른 위치 정보 가져오기
    @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
      let values = "(\(rangeSlider.lowerValue) \(rangeSlider.upperValue))"
      print("Range slider value changed: \(values)")
-    var aString: String = rangeSlider.lowerValue.description
-    var bString: String = rangeSlider.upperValue.description
-    if aString != nil && aString.count > 5{
-        pointerALabel.text = nil
-        let end = aString.index(aString.startIndex, offsetBy: 5)
-        let range = aString.startIndex..<end
-        print("String(aString[range]) \(String(aString[range]))")
-        pointerALabel.text = String(aString[range])
-    }
-    if bString != nil && bString.count > 5{
-        pointerBLabel.text = nil
-        let end = bString.index(bString.startIndex, offsetBy: 5)
-        let range = aString.startIndex..<end
-        print("String(bString[range]) \(String(bString[range]))")
-        pointerBLabel.text = String(bString[range])
-    }
+     var aString: String = rangeSlider.lowerValue.description
+     var bString: String = rangeSlider.upperValue.description
+     if aString != nil && aString.count > 5{
+         pointerALabel.text = nil
+         let end = aString.index(aString.startIndex, offsetBy: 5)
+         let range = aString.startIndex..<end
+         print("String(aString[range]) \(String(aString[range]))")
+         pointerALabel.text = String(aString[range])
+     }
+     if bString != nil && bString.count > 5{
+         pointerBLabel.text = nil
+         let end = bString.index(bString.startIndex, offsetBy: 5)
+         let range = aString.startIndex..<end
+         print("String(bString[range]) \(String(bString[range]))")
+         pointerBLabel.text = String(bString[range])
+     }
     
    }
 }
