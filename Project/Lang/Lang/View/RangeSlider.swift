@@ -127,9 +127,6 @@ class RangeSlider: UIControl {
     CATransaction.begin()
     CATransaction.setDisableActions(true)
     CATransaction.commit()
-    
-    
-
   }
   // 2
   func positionForValue(_ value: CGFloat) -> CGFloat {

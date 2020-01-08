@@ -74,20 +74,19 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-iL-V6E">
-                                                <rect key="frame" x="36.666666666666664" y="398" width="29.999999999999993" height="100"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-iL-V6E" customClass="TactileSlider" customModule="Lang" customModuleProvider="target">
+                                                <rect key="frame" x="31.666666666666671" y="398" width="40" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="5Yn-QS-eOi"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="UEV-u8-8UB"/>
-                                                    <constraint firstAttribute="width" constant="30" id="qho-yj-LzV"/>
+                                                    <constraint firstAttribute="width" constant="40" id="qho-yj-LzV"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-fC-tjK">
-                                                <rect key="frame" x="119.66666666666669" y="398" width="30" height="100"/>
+                                                <rect key="frame" x="114.66666666666669" y="398" width="40" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="N5C-Z2-aua"/>
+                                                    <constraint firstAttribute="width" constant="40" id="N5C-Z2-aua"/>
                                                     <constraint firstAttribute="height" constant="100" id="uBx-pW-b2L"/>
                                                 </constraints>
                                             </view>

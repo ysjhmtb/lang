@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE6DBE6723C62DD500C6EE95 /* TactileSliderLayerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBE6623C62DD500C6EE95 /* TactileSliderLayerRenderer.swift */; };
+		AE6DBE6923C62E2300C6EE95 /* TactileSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBE6823C62E2300C6EE95 /* TactileSlider.swift */; };
 		AE76C2B923B2906800E774DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76C2B823B2906800E774DD /* AppDelegate.swift */; };
 		AE76C2BB23B2906800E774DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76C2BA23B2906800E774DD /* SceneDelegate.swift */; };
 		AE76C2BD23B2906800E774DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76C2BC23B2906800E774DD /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE6DBE6623C62DD500C6EE95 /* TactileSliderLayerRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactileSliderLayerRenderer.swift; sourceTree = "<group>"; };
+		AE6DBE6823C62E2300C6EE95 /* TactileSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactileSlider.swift; sourceTree = "<group>"; };
 		AE76C2B523B2906800E774DD /* Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE76C2B823B2906800E774DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE76C2BA23B2906800E774DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			children = (
 				AE909AAC23BACCD1002DA4EE /* RangeSliderTrackLayer.swift */,
 				AE909AAE23BACD18002DA4EE /* RangeSlider.swift */,
+				AE6DBE6623C62DD500C6EE95 /* TactileSliderLayerRenderer.swift */,
+				AE6DBE6823C62E2300C6EE95 /* TactileSlider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,7 +282,9 @@
 				AE909AAD23BACCD1002DA4EE /* RangeSliderTrackLayer.swift in Sources */,
 				AE909AAF23BACD18002DA4EE /* RangeSlider.swift in Sources */,
 				AE76C2BD23B2906800E774DD /* ViewController.swift in Sources */,
+				AE6DBE6923C62E2300C6EE95 /* TactileSlider.swift in Sources */,
 				AE76C2B923B2906800E774DD /* AppDelegate.swift in Sources */,
+				AE6DBE6723C62DD500C6EE95 /* TactileSliderLayerRenderer.swift in Sources */,
 				AE76C2BB23B2906800E774DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
