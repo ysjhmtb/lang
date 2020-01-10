@@ -48,15 +48,20 @@ class TactileSliderLayerRenderer {
     let maskLayer = CAShapeLayer()
     
     init() {
+//        print("TactileSliderLayerRenderer init")
         trackLayer.backgroundColor = trackBackground.cgColor
         thumbLayer.fillColor = thumbTint.cgColor
         maskLayer.fillColor = UIColor.white.cgColor
         maskLayer.backgroundColor = UIColor.clear.cgColor
         trackLayer.mask = maskLayer
         trackLayer.masksToBounds = true
+        trackLayer.zPosition = -0.5
+        thumbLayer.zPosition = -0.5
+        maskLayer.zPosition = -0.5
     }
     
     private func updateThumbLayerPath() {
+//        print("TactileSliderLayerRenderer updateThumbLayerPath")
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         
@@ -66,6 +71,7 @@ class TactileSliderLayerRenderer {
     }
     
     private func updateMaskLayerPath() {
+//        print("TactileSliderLayerRenderer updateMaskLayerPath")
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         
@@ -77,17 +83,23 @@ class TactileSliderLayerRenderer {
     }
     
     private func updateGrayedOut() {
+//        print("TactileSliderLayerRenderer updateGrayedOut") // 안 나타남
         let alpha: Float = grayedOut ? 0.25 : 1
         trackLayer.opacity = alpha
     }
     
     private func updatePopUp() {
+//        print("TactileSliderLayerRenderer updatePopUp") // 안 나타남
         CATransaction.begin()
         CATransaction.setDisableActions(true)
-        
+
         let zPosition: CGFloat = popUp ? 1.025 : 1
+        print("before")
+        dump(trackLayer)
         trackLayer.transform = CATransform3DScale(CATransform3DIdentity, zPosition, zPosition, zPosition)
-        
+        print("after")
+        dump(trackLayer)
+
         let animation = CABasicAnimation(keyPath: "transform.scale")
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         animation.duration = 0.1
@@ -97,6 +109,7 @@ class TactileSliderLayerRenderer {
     }
     
     internal func updateBounds(_ bounds: CGRect) {
+//        print("TactileSliderLayerRenderer updateBounds")
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         
@@ -119,6 +132,7 @@ class TactileSliderLayerRenderer {
     }
     
     internal func setValue(_ value: Float, animated: Bool = false) {
+//        print("TactileSliderLayerRenderer setValue")
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         

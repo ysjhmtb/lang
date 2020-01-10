@@ -74,18 +74,40 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-iL-V6E" customClass="TactileSlider" customModule="Lang" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-iL-V6E" customClass="VolumeTactileSlider" customModule="Lang" customModuleProvider="target">
                                                 <rect key="frame" x="31.666666666666671" y="398" width="40" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-gk-cHM">
+                                                        <rect key="frame" x="7.6666666666666679" y="56.666666666666671" width="25.000000000000004" height="22.000000000000007"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="ZjW-bv-rDj"/>
+                                                            <constraint firstAttribute="width" constant="25" id="guG-HH-MCY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="5Yn-QS-eOi"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="UEV-u8-8UB"/>
+                                                    <constraint firstItem="yfh-gk-cHM" firstAttribute="centerX" secondItem="XGM-iL-V6E" secondAttribute="centerX" id="apy-zs-IyF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yfh-gk-cHM" secondAttribute="bottom" constant="20" symbolic="YES" id="gcy-n4-JG7"/>
                                                     <constraint firstAttribute="width" constant="40" id="qho-yj-LzV"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-fC-tjK">
                                                 <rect key="frame" x="114.66666666666669" y="398" width="40" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pRr-jV-Qw2">
+                                                        <rect key="frame" x="7.3333333333333286" y="57" width="25" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="L43-Fr-nmj"/>
+                                                            <constraint firstAttribute="width" constant="25" id="XcN-j5-hfm"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="pRr-jV-Qw2" firstAttribute="centerX" secondItem="vcp-fC-tjK" secondAttribute="centerX" id="5JK-8U-4gn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pRr-jV-Qw2" secondAttribute="bottom" constant="20" symbolic="YES" id="8FH-9D-Qyr"/>
                                                     <constraint firstAttribute="width" constant="40" id="N5C-Z2-aua"/>
                                                     <constraint firstAttribute="height" constant="100" id="uBx-pW-b2L"/>
                                                 </constraints>
@@ -227,4 +249,8 @@
             <point key="canvasLocation" x="128.98550724637681" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" catalog="system" width="60" height="64"/>
+        <image name="speaker" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
