@@ -28,13 +28,13 @@ class RangeSlider: UIControl {
     }
   }
 
-  var lowerValue: CGFloat = 0.2 {
+  var lowerValue: CGFloat = 0.0 {
     didSet {
       updateLayerFrames()
     }
   }
 
-  var upperValue: CGFloat = 0.8 {
+    var upperValue: CGFloat = 1.0 {
     didSet {
       updateLayerFrames()
     }
